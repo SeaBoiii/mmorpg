@@ -1,0 +1,14 @@
+/* Achievement disabled state for non-default mode or easy difficulty */
+.achievement.disabled {
+    background-color: rgba(32, 32, 32, 0.3);
+    border-left-color: #444;
+    opacity: 0.5;
+}
+
+.achievement.disabled .achievement-name {
+    color: #555;
+}
+
+.achievement.disabled .achievement-desc {
+    color: #444;
+}

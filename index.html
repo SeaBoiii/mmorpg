@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D RPG Adventure</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/achievements-disabled.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="ui">
+            <div id="playerStats">
+                <div>Level: <span id="playerLevel">1</span></div>
+                <div>HP: <span id="playerHP">100/100</span></div>
+                <div id="healthBarContainer" style="width: 200px; height: 20px; border: 2px solid #fff; margin: 2px 0; background: #333;">
+                    <div id="healthBar" style="width: 100%; height: 100%; background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00); transition: width 0.3s ease;"></div>
+                </div>
+                <div>XP: <span id="playerXP">0</span> / <span id="playerXPNext">100</span></div>
+                <div id="xpBarContainer" style="width: 200px; height: 15px; border: 2px solid #fff; margin: 2px 0; background: #333;">
+                    <div id="xpBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #4169E1, #00BFFF); transition: width 0.3s ease;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div id="achievementsPanel">
+            <h3>Achievements</h3>
+            <div id="achievementsList">
+                <!-- Achievements will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
